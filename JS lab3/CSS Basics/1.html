@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Добро пожаловать!</title>
+    <style>
+        body {
+            font-family: 'Times New Roman';
+        }
+        .welcome span:nth-child(odd) {
+            color: red;
+        }
+        .welcome span:nth-child(even) {
+            color: blue;
+        }
+        .color-alternate span:nth-child(odd) {
+            color: red;
+            text-decoration: underline;
+            text-decoration-color: red; 
+        }
+        .color-alternate span:nth-child(even) {
+            color: blue;
+            text-decoration: underline;
+            text-decoration-color: blue;
+        }
+        .wording {
+            font-family: 'Comic Sans MS';
+        }
+        table {
+            background-color: turquoise;
+            border-collapse: collapse;
+            width: 400px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th {
+            width: 200px;
+            text-align: left;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Добро пожаловать!</h1>
+        <p class="welcome">
+            <em><span>П</span><span>р</span><span>и</span><span>в</span><span>е</span><span>т</span><span>с</span><span>т</span><span>в</span><span>у</span><span>е</span><span>м</span></em>
+            <ins class="color-alternate"><span>в</span><span>а</span><span>с</span></ins>
+            <b><span>в</span> <span>н</span><span>а</span><span>ш</span><span>е</span><span>м</span></b>
+            <a href="https://ru.pinterest.com/">магазине</a>!
+        </p>
+        <p class="Pythagoras">
+            &lt;h1&gt;<span class="wording">Теорема Пифагора</span>&lt;/h1&gt;<span class="expression">: 𝑐<sup>2</sup> = 𝑎<sup>2</sup> + 𝑏<sup>2</sup></span>
+        </p>
+        <table>
+            <tr>
+                <td colspan="2">Информация</td>
+            </tr>   
+            <tr>
+                <th>Старая цена: <del>1000</del> ₽</th>
+                <th>Новая цена: 500 ₽</th>
+            </tr>   
+        </table>
+    </main>
+</body>
+</html>

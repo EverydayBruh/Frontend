@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Responsive Text</title>
+  <style>
+    .text {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .desktop, .tablet, .mobile {
+      display: none;
+    }
+
+    @media screen and (min-width: 1024px) {
+      .desktop {
+        display: block;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      .tablet {
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .mobile {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="text">
+    <span class="desktop">Desktop</span>
+    <span class="tablet">Tablet</span>
+    <span class="mobile">Mobile</span>
+  </div>
+</body>
+</html>

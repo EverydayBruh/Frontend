@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 1-2</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 10px; 
+        }
+        td, th {
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+    </style>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.body.style.userSelect = 'none';
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    });
+    </script>
+</head>
+<body>
+    <h1>Добро пожаловать!</h1>
+    <p>
+      <em>Приветствуем</em>
+      <u>вас</u>
+      <strong>в нашем</strong>
+      <a href="https://ru.pinterest.com/">магазине</a>!
+    </p>
+    <p style="display: inline;">&lt;h1&gt;Теорема Пифагора&lt;/h1&gt;</p>: c² = a² + b²
+    <table>
+      <tr>
+        <td colspan="2">Информация</td>
+      </tr>
+      <tr>
+        <td>Старая цена: <del>1000 ₽</del></td>
+        <td>Новая цена: 500 ₽</td>
+      </tr>
+    </table>
+  </body>
+  </html>
