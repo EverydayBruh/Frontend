@@ -1,0 +1,7 @@
+.loop-colors(@i) when (@i <= 100) {
+    .number-@{i} {
+      color: rgb(@i, 256 - @i, 0);
+    }
+    .loop-colors(@i + 1);
+}
+.loop-colors(1);

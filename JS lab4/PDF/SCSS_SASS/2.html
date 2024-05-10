@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="2.css">
+</head>
+<body>
+  <ul id="numbers-list"></ul>
+
+  <script>
+    const numbersList = document.getElementById('numbers-list');
+    for (let i = 1; i <= 100; i++) {
+        const listItem = document.createElement('li');
+        listItem.className = `number-${i}`;
+        listItem.textContent = i;
+        numbersList.appendChild(listItem);
+    }
+  </script>
+</body>
+</html>

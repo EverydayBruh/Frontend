@@ -1,0 +1,48 @@
+@mixin box-styling($bg-color, $padding: 20px) {
+  background-color: $bg-color;
+  text-align: center;
+  padding: $padding;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  @include box-styling(#f0f0f0);
+}
+
+.main-navigation {
+  @include box-styling(#f2f2f2);
+
+  a {
+    display: inline;
+    margin: 0 15px;
+  }
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px; 
+}
+
+.content-item {
+  flex-basis: 100%;
+  @include box-styling(#f2f2f2);
+}
+
+.large {
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+.footer-box, footer {
+  @include box-styling(#f2f2f2, 10px);
+}
