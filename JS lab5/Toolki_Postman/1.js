@@ -1,4 +1,6 @@
 
+//  Много чего перепробовал, но в этом задании проблемы с импортом PixiJS, поэтому не соберётся :(
+//     Uncaught TypeError: Cannot read properties of undefined (reading 'canvas') 
 const app = new PIXI.Application({ 
     width: 800, 
     height: 600,
