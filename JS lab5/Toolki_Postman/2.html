@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Axios GET Request</title>
+  </head>
+  <body>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script>
+      axios
+        .get('https://vk.com')
+        .then(response => {
+          console.log(response.data);
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    </script>
+  </body>
+</html>
